@@ -1,11 +1,10 @@
 .shopflex {
     width: 100%;
-    height: 100px;
-    display: inline-block;
-    border-radius: 5px;
-    border-color: red;
-    background-color: black;
     margin-top: 10px;
+}
+
+flex {
+    display: inline-block;
 }
 
 .shopflex img {
