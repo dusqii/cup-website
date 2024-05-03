@@ -1,10 +1,11 @@
 /* Navbar */
 .sticky {
-  background-color: black;
+  background-color: gray;
   border-radius: 6px;
-  outline: solid #FFFFF1 3px;
+  outline: solid darkgrey 3px;
   margin: 3px;
-  margin-left: -9px;
+  margin-left: -4px;
+  align: justify;
   position: fixed;
   top: 0;
   width: calc(100% - 6px);
@@ -21,6 +22,7 @@ nav ul {
 nav ul li {
   display: inline;
   color: black;
+  vertical-align: middle;
 }
 
 nav ul li a {
@@ -38,10 +40,16 @@ nav ul li a:hover {
   padding-top: 100px;
   width: 100%;
   border-width: 10px;
-  border-color: black;
+  border-color: lightgray;
   height: 100px;
 }
 
 flex {
-  align: center;
+  align-items: center;
+}
+
+div {
+  background-color: gray;
+  border-radius: 6px;
+  outline: solid darkgrey 3px;
 }
