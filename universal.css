@@ -44,4 +44,26 @@ nav ul li a:hover {
 
 flex {
   align: center;
+  display: inline-block;
+}
+
+.scrolling-images {
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.image {
+  width: 30%;
+  height: auto;
+  margin-right: 20px; 
+}
+
+.cupbanner {
+  padding-top: 100px;
+  width: 100%;
+  border-width: 10px;
+  border-color: black;
+  height: 100px;
+  max-width: 100%;
+  height: auto;
 }
