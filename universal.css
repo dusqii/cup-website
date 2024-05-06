@@ -1,26 +1,24 @@
 /* Navbar */
 .sticky {
-  background-color: black;
-  border-radius: 6px;
-  outline: solid #FFFFF1 3px;
-  margin: 3px;
-  margin-left: -9px;
   position: fixed;
   top: 0;
-  width: calc(100% - 6px);
+  width: 100vw;
+  background-color: #000;
+  border-radius: 6px;
+  outline: 3px solid #FFFFF1;
+  margin: 3px 0 0 -9px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   z-index: 1000;
 }
 
 nav ul {
-  list-style-type: none;
+  list-style: none;
   margin: 0;
   padding: 0;
 }
 
 nav ul li {
-  display: inline;
-  color: black;
+  display: inline-block;
 }
 
 nav ul li a {
@@ -34,45 +32,136 @@ nav ul li a:hover {
   background-color: darkslategray;
 }
 
+/* Banner */
 .banner {
   padding-top: 100px;
-  width: 100%;
-  border-width: 10px;
-  border-color: black;
+  width: 100vw;
   height: 100px;
   text-align: justify;
+  box-sizing: border-box;
 }
 
-flex {
-  align: center;
-  display: inline-block;
+/* Flexbox container */
+.flex {
+  display: flex;
+  justify-content: center;
 }
 
+/* Scrolling images */
 .scrolling-images {
-  overflow-x: scroll;
+  overflow-x: auto;
   white-space: nowrap;
 }
 
 .image {
   width: 30%;
   height: auto;
-  margin-right: 20px; 
+  margin-right: 20px;
+  max-width: 100%;
 }
 
 .cupbanner {
   padding-top: 100px;
-  width: 100%;
-  border-width: 10px;
-  border-color: black;
-  height: 100px;
-  max-width: 100%;
+  width: 100vw;
+  outline: 3px solid #000;
   height: auto;
+  max-width: 100%;
+  box-sizing: border-box;
+  border-radius: 5px;
 }
 
+/* Card */
 .card {
-
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  outline: 3px solid #000;
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-sizing: border-box;
 }
 
-p {
+.card > * {
+  flex: 1;
   text-align: center;
+}
+
+.about-section {
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  outline: 3px solid #000;
+}
+
+.about-section h2 {
+  margin-bottom: 10px;
+}
+
+.about-section p {
+  text-align: center;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.image-panel {
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image-panel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.button-panel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: #e0e0e0;
+}
+
+.button.active {
+  background-color: #333;
+  color: #fff;
 }
