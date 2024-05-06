@@ -6,7 +6,7 @@
   background-color: #000;
   border-radius: 6px;
   outline: 3px solid #FFFFF1;
-  margin: 3px 0 0 0;
+  margin: 3px 3px 3px 3px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   z-index: 1000;
 }
@@ -14,9 +14,10 @@
 nav {
   display: flex;
   align-items: center;
-  height: 50px;
+  height: 80px;
   flex-direction: row;
   justify-content: center;
+  font-size: x-large;
 }
 
 nav ul {
@@ -31,7 +32,7 @@ nav ul li {
 
 nav ul li a {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 10px;
   text-decoration: none;
   color: #FFFFF1;
 }
@@ -67,20 +68,28 @@ nav ul li a:hover {
 }
 
 .image {
-  width: 30%;
+  width: 30vw;
   height: auto;
   margin-right: 20px;
-  max-width: 100%;
+  max-width: 50vw;
 }
 
 .cupbanner {
-  padding-top: 100px;
-  width: 100vw;
-  outline: 3px solid #000;
+  width: 90vw;
+  /*outline: 3px solid #000;*/
   height: auto;
-  max-width: 100%;
   box-sizing: border-box;
   border-radius: 5px;
+}
+
+.center-this-text {
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  width: 100vw;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  
 }
 
 /* Card */
@@ -102,7 +111,8 @@ nav ul li a:hover {
 }
 
 .about-section {
-  background-color: #f2f2f2;
+  background-color: rgb(86, 99, 112);
+  color: #cacaca;
   padding: 20px;
   margin: 20px 0;
   border-radius: 10px;
@@ -124,6 +134,9 @@ body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
+  font-size: larger;
+  width: 100vw;
+  background-color: slategray;
 }
 
 .container {
@@ -136,17 +149,23 @@ body {
 }
 
 .image-panel {
-background-color: #fff;
-  padding: 20px;
-  width: 900px;
+background-color: #424e59;
+padding: 20px;
+  width: 90vw;
   margin-bottom: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+@media (min-width:748px) {
+  .image-panel {
+      width: 40vw;
+    }
+}
+ 
 .image-panel img {
   width: 100%;
-  max-width: 900px;
+  max-width: 90vw;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -207,7 +226,7 @@ background-color: #fff;
   width: 100%;
   height: 100px;
   background-color: #3f51b5;
-  margin: 20px 0;
+  margin: 20px ;
   border-radius: 5px;
   padding: 20px;
   box-sizing: border-box;
@@ -235,7 +254,7 @@ footer {
   flex-direction: column;
   align-items: center;
   background-color: #3f51b5;
-  color: #fff;
+  color: #ffffff;
   padding: 20px;
   border-radius: 5px;
   margin-top: 20px;
@@ -269,4 +288,5 @@ footer p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding
+  
+}
