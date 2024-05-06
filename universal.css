@@ -40,6 +40,7 @@ nav ul li a:hover {
   border-width: 10px;
   border-color: black;
   height: 100px;
+  text-align: justify;
 }
 
 flex {
@@ -68,6 +69,10 @@ flex {
   height: auto;
 }
 
-body {
-  background-image: url(assets/bg.jpg);
+.card {
+
+}
+
+p {
+  text-align: center;
 }
