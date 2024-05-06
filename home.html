@@ -1,30 +1,29 @@
-<html lang="english">
-    <head>
-        <meta name="charset" content="UTF-8"/>
-        <link href="universal.css" rel="stylesheet" type="text/css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-        <link href="index.js" rel=""
-    </head>
+<!-- index.html -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="universal.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
     <header class="sticky">
-        <nav>
-          <ul>
-            <strong>
-              <li><a href="home.html"><img src="assets/logo.png" height="30" width="20"></a></li>
-              <li><a href="home.html">Brand</a></li>
-              <li><a href="home.html">Home</a></li>
-              <li><a href="shop.html">Shop</a></li>
-              <li><a href="cart.html"><img src="assets/3.png" height="20" width="20"></a></li>
-            </strong>
-          </ul>
-        </nav>
-      </header>
-    <body>  
-      <img src="assets/image.png" class="cupbanner banner"><br>
-      <div class="container">
+      <nav>
+        <ul>
+          <li><a href="home.html"><img src="assets/logo.png" alt="Logo" height="30" width="20"></a></li>
+          <li><a href="home.html">Brand</a></li>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="cart.html"><img src="assets/3.png" alt="Cart" height="20" width="20"></a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <img src="assets/image.png" class="cupbanner banner" alt="Banner Image"><br>
+      <section class="container">
         <div class="image-panel">
-          <img id="image-display" src="https://via.placeholder.com/600x400.png?text=Image+1">
+          <img id="image-display" src="https://via.placeholder.com/600x400.png?text=Image+1" alt="Image 1">
         </div>
         <div class="button-panel">
           <button class="button" data-image="1">1</button>
@@ -34,12 +33,14 @@
           <button class="button" data-image="5">5</button>
           <button class="button" data-image="6">6</button>
         </div>
-      </div>
-      <div class="about-section card">
+      </section>
+      <section class="about-section card">
         <h2>Our Story</h2>
         <p>
           Welcome to the story of HydraBoost: where innovation meets inspiration. At HydraBoost, our journey begins not in boardrooms or corporate offices, but in the vibrant halls of high schools, where young minds ignite with creativity. In one such setting, a group of enthusiastic high schoolers gathered with a singular mission: to design a cup from scratch. Fuelled by passion and guided by curiosity, they embarked on a journey of discovery within the realm of industrial design. With each sketch and every mold, they poured their hearts into crafting not just a cup, but a symbol of their collective vision and innovation. Through collaboration and unwavering determination, they transformed raw materials into vessels that embodied the spirit of HydraBoost—empowering, refreshing, and brimming with potential. Join us as we celebrate the boundless creativity and ingenuity of tomorrow's leaders at HydraBoost High School Edition.
         </p>
-      </div>
-    </body>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
 </html>

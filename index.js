@@ -12,7 +12,7 @@ const images = [
 
 buttons.forEach((button, index) => {
   button.addEventListener('click', () => {
-    const imageUrl = images[index];
+    const imageUrl = assets/images[index];
     imageDisplay.src = imageUrl;
     buttons.forEach((btn) => btn.classList.remove('active'));
     button.classList.add('active');
