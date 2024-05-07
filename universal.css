@@ -71,7 +71,7 @@ nav ul li a:hover {
 }
 
 .cupbanner {
-  width: 90vw;
+  width: 70vw;
   height: auto;
   box-sizing: border-box;
   border-radius: 5px;
@@ -114,6 +114,10 @@ nav ul li a:hover {
   flex-direction: column;
   align-items: center;
   outline: 3px solid #000;
+  margin: 3px;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .about-section h2 {
@@ -278,5 +282,4 @@ footer p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
